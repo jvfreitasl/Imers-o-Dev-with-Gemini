@@ -4,7 +4,7 @@ let dados = [
     descricao:
       "Rayssa Leal, conhecida como a Fadinha, é uma das maiores promessas do skate mundial. Com apenas 16 anos, a atleta já conquistou diversos títulos e se tornou um ícone da nova geração de skatistas. Sua habilidade e carisma a tornaram uma das atletas mais populares do Brasil.",
     link: "https://pt.wikipedia.org/wiki/Rayssa_Leal",
-    tags: "fada sk8",
+    tags: "skate fada sk8",
   },
   {
     titulo: "Beatriz Souza",

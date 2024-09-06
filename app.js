@@ -7,34 +7,36 @@ function pesquisar() {
   let resultado = "";
   let titulo = "";
   let descricao = "";
-  let tags = "";
+  let tag = "";
 
   // Itera sobre cada item de dados (assumindo que 'dados' é um array de objetos)
   for (let dado of dados) {
     titulo = dado.titulo.toLowerCase();
     descricao = dado.descricao.toLowerCase();
-    tags = dado.tags.toLowerCase();
-    if (!campoPesquisa) {
-      section.innerHTML =
-        "Nada foi encontrado. Digite um nome de um(a) atleta ou esporte.";
-      return;
-    } else if (
+    tag = dado.tags.toLowerCase();
+    console.log(titulo);
+
+    if (
       titulo.includes(campoPesquisa) ||
       descricao.includes(campoPesquisa) ||
-      tags.includes(campoPesquisa)
+      tag.includes(campoPesquisa)
     ) {
       resultado += `<div class="item-resultado">
-      <h2><a href="#" target="_blank">${dado.titulo}</a></h2>
+      <h2><a href='#'>${dado.titulo}</a></h2>
       <p class="descrisao-meta">${dado.descricao}</p>
       <a href=${dado.link} target="_blank">Veja mais.</a>
     </div>`;
-    } else if (!resultado) {
-      section.innerHTML = "Nada foi encontrado.";
+    }
+
+    if (campoPesquisa == "") {
+      section.innerHTML = `Nada foi encontrado. Digite um nome de um(a) atleta ou esporte.`;
       return;
     }
-    // Cria um novo elemento div para cada resultado, formatando-o como HTML
   }
-
+  if (!resultado) {
+    resultado = `<p>Nada foi encontrado.</p>`;
+    return;
+  }
   // Atribui o HTML gerado à seção de resultados
   section.innerHTML = resultado;
 }
