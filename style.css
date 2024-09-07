@@ -4,7 +4,10 @@
 /* Estiliza o corpo da página */
 body {
   font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-  background-color: #dddddd; /* Cor de fundo da página */
+  background-image: url(./Designer.jpeg); /* Cor de fundo da página */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex; /* Usa Flexbox para layout */
   flex-direction: column; /* Alinha os itens na vertical */
   align-items: center; /* Centraliza os itens horizontalmente */
@@ -17,7 +20,8 @@ body {
 /* Estiliza os títulos h1 */
 h1 {
   font-size: 2.5rem; /* Tamanho da fonte */
-  color: #222831; /* Cor do texto */
+  text-shadow: 4px 4px 6px #121212;
+  color: #fdfdfd; /* Cor do texto */
   text-align: center; /* Alinha o texto ao centro */
   letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
@@ -47,7 +51,7 @@ section button {
   padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
   border: none; /* Remove a borda padrão */
   border-radius: 1.5rem; /* Borda arredondada */
-  background-color: #30475e; /* Cor de fundo do botão */
+  background-color: #4a9633; /* Cor de fundo do botão */
   color: #f5f7f8; /* Cor do texto do botão */
   font-size: 1rem; /* Tamanho da fonte */
   cursor: pointer; /* Muda o cursor para indicar que é clicável */
@@ -71,7 +75,7 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-  background: #ffffff; /* Cor de fundo dos itens */
+  background: #ffffffeb; /* Cor de fundo dos itens */
   border-radius: 0.6rem; /* Borda arredondada */
   padding: 1rem; /* Espaçamento interno */
   margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -103,9 +107,14 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-  background-color: #f5f7f8; /* Cor de fundo do rodapé */
-  color: #45474b; /* Cor do texto */
+  background-image: radial-gradient(
+    circle at center,
+    #009933,
+    #ffcc00
+  ); /* Cor de fundo do rodapé */
+  color: #000000; /* Cor do texto */
   text-align: center; /* Alinha o texto ao centro */
+  line-height: 0.8;
   padding: 0; /* Espaçamento interno */
   width: 100%; /* Largura total da página */
   position: absolute; /* Posiciona o rodapé */

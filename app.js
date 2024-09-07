@@ -24,7 +24,7 @@ function pesquisar() {
       resultado += `<div class="item-resultado">
       <h2><a href='#'>${dado.titulo}</a></h2>
       <p class="descrisao-meta">${dado.descricao}</p>
-      <a href=${dado.link} target="_blank">Veja mais.</a>
+      <a href=${dado.link} target="_blank"><strong>Veja mais.</strong></a>
     </div>`;
     }
 
